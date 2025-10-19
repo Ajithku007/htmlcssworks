@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         .navbar-custom{
+         background-color:black;
+        }
+        .home-page{
+       height:90vh;
+       width:100%;
+       transform-style:preserve-3d;
+        }
+        .col-6 h1{
+        font-size:60px;
+        }
+           .p2{
+        background-color:white;
+        }
+        .bseller{
+        border-bottom:3px solid transparent;
+        }
+        .bseller:hover{
+      border-bottom:3px solid red;
+      transition:border-color 0.3s ease;
+      }
+      .pageend{
+
+
+      height:600px;
+      width:100%;
+      background-size:cover;
+      }
+        html, body {
+          overflow-x: hidden;   /* Force hide horizontal scroll */
+      }
+       .pageend {
+       padding-top:410px;
+       }
+        .pageend-1{
+        background-image:url("pageend.png");
+        }
+        .contact p{
+        color:grey;
+        }
+        .contact i{
+        font-size:30px;
+        }
+<!-----------contact icons-------------->
+       .contact .icon-1{  <!--youtube-->
+       color:black;
+       }
+       .contact .icon-1:hover{
+       color:red;
+       }
+        .contact .icon-2{  <!--facebook-->
+        color:black;
+        }
+        .contact .icon-2:hover{
+        color:blue;
+        }
+        .contact .icon-3{  <!---pinterest----->
+        color:black;
+        }
+        .contact .icon-3:hover{
+        color:red;
+        }
+        .contact .icon-4{  <!-----linked in---->
+        color:black;
+        }
+        .contact .icon-4:hover{
+        color:blue;
+        }
+        .email-icons button{
+        background-color:black;
+        color:white;
+        }
+         .email-icons button:hover{
+        background-color:blue;
+        color:white;
+        }
+        .card{
+         border-radius: 15px;
+         overflow: hidden;
+         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+         transition: transform 0.3s, box-shadow 0.3s;
+         cursor:pointer;
+         flex-grow:1;
+         flex-shrink:1;
+
+        }
+        .card:hover {
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+         }
+        .card img {
+         width: 100%;
+         transition: transform 0.3s ease;
+         }
+
+       .card:hover img {
+       transform: scale(1.1);
+}
+        .box{
+        border:3px solid transparent;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+         transition: transform 0.3s, box-shadow 0.3s;
+         cursor:pointer;
+        }
+        .box:hover{
+        border:3px solid rgb(189, 175, 175, 1);
+        box-shadow:0 0 20px rgb(189, 175, 175, 1);
+        }
+
+       .home-page .container button{
+       width:100px;
+       }
+        .home-page .container button:hover{
+        width:250px;
+        transition:0.3s ease;
+        }
+
+
+        <----products----->
+        .products{
+        display:flex;
+         flex-wrap:wrap;
+         flex-direction:column;
+         gap:20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="main">
+<nav class="navbar navbar-expand-lg navbar-dark  navbar-custom" >
+  <div class="container-fluid  ">
+      <img src="logo.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+    <a class="navbar-brand text-light fw-bold" href="#">CHRONOS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse  " id="navbarNav">
+      <ul class="navbar-nav ms-auto  ">
+        <li class="nav-item ">
+          <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#feature">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-light" href="#contacts" tabindex="-1" >Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--home page-->
+<div class=" home-page ">
+    <div class="row ">
+        <div class="col-6  d-flex flex-column justify-content-center container" style="height:90vh">
+            <h1 class="text-center  fw-bold ">CHRONOS</h1>
+            <p class=" text-center">The <span>Chronos</span> Watch collection offers a wide range of <br>prestigious, high-precision timepieces, <br>from Professional to Classic models to suit<br> any wrist.</p>
+            <button type="button"  class="btn btn-outline-dark mx-auto mt-3 ">Explore</button>
+        </div>
+        <div class="col-6  d-flex align-center-center " style="height:90vh">
+<!--            <img src="w1.png " class="my-auto " height="400px">-->
+            <div style="height:400px;width:350px" class=" mx-auto my-auto">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner ">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="w1.png" class="d-block w-100" alt="...">
+
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="w6.png" class="d-block w-100" alt="...">
+
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="w3.png" class="d-block w-100" alt="...">
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-----page 2------>
+<div class="bg-dark ">
+<div class="container  mb-3  " id="feature">
+    <div class="row pt-5 pb-5">
+<!--        col-left-->
+        <div class="col-6  me-3 ">
+
+<!--          top-left-->
+                    <div class="row p2 box">
+                        <div class="col-6     ">
+                            <img src="w1.png" height="300px" width="300px"  >
+                        </div>
+                        <div class="col-6  pt-5  " >
+                            <p class="text-center pt-5">Precision Crafted Timepiece</p>
+                            <h2 class="text-center ">Breitling Top Time<br>Classic</h2>
+                        </div>
+                    </div>
+
+
+
+<!--           bottom-left-->
+                <div class="row mt-3 p2 box">
+
+                        <div class="  p-0 ">
+                           <h2 class="text-center pt-5">All-Day Comfort</h2>
+                            <P class="text-center ">Every Detail Reflects timeless craftmanship and enduring quality</P>
+                        </div>
+                        <div class=" p-0 d-flex justify-content-center">
+                             <img src="w3.png" height="400px" width="400px" class="ms-5 " >
+                        </div>
+                </div>
+        </div>
+<!--        column right-->
+            <div class="col ">
+<!--                top right-->
+                 <div class="row p2 box">
+
+                        <div class="  p-0 ">
+                           <h2 class="text-center pt-5 ">Crafted for Comfort</h2>
+                            <P class="text-center ">The Caseback is forged from high-grade stainless steel,Precision engraved and designed for lasting durability</P>
+                        </div>
+                        <div class=" p-0 d-flex justify-content-center">
+                             <img src="w7.png" height="375px" width="230px" class="ms-5 " >
+                        </div>
+                </div>
+<!--                bottom-right-->
+                <div class="row mt-3  p2 box">
+                        <div class="col-6   pt-5 ">
+                            <h2 class="text-center pt-5">316L Stainless Steel Caseback</h2>
+                            <p class="text-center ">Engineered for Excellence</p>
+
+                        </div>
+                        <div class="col-6   ">
+                            <img src="w6.png" height="300px" width="300px"  >
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------page 3---------->
+
+
+<div class="container mb-3" id="products" >
+    <h2 class="text-center pt-2">BEST SELLERS</h2>
+    <div class="container d-flex justify-content-evenly pt-3 mb-3">
+        <h4 class="bseller ">Top Picks</h4>
+        <h4 class="bseller">Arrivals</h4>
+        <h4 class="bseller">Trending Now</h4>
+        <h4 class="bseller">Limited Edition</h4>
+
+    </div>
+</div>
+
+
+<!------products------->
+
+<div class="bg-light ">
+<div class="container-fluid   products">
+    <div class="row  ">
+        <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="p1.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title ">Armani Exchange</h5>
+                    <p class="card-text ">$77.00 <span class="text-decoration-line-through">$99</span></p>
+                    <button type="button" class="btn btn-outline-dark">Add to cart</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3  mt-5">
+             <div class="card mx-auto" style="width: 18rem;">
+                <img src="p2.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title ">Breitling</h5>
+                    <p class="card-text ">$77.00 <span class="text-decoration-line-through">$99</span></p>
+                    <button type="button" class="btn btn-outline-dark">Add to cart</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3  mt-5">
+             <div class="card mx-auto" style="width: 18rem;">
+                <img src="p3.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title ">Patek Phillipe</h5>
+                    <p class="card-text ">$77.00 <span class="text-decoration-line-through">$99</span></p>
+                    <button type="button" class="btn btn-outline-dark">Add to cart</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3  mt-5">
+             <div class="card mx-auto" style="width: 18rem;">
+                <img src="p4.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title ">Seiko</h5>
+                    <p class="card-text ">$77.00 <span class="text-decoration-line-through">$99</span></p>
+                    <button type="button" class="btn btn-outline-dark">Add to cart</button>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+     <div class="row   mt-5">
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="p5.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title ">Quantum</h5>
+                    <p class="card-text ">$77.00 <span class="text-decoration-line-through">$99</span></p>
+                    <button type="button" class="btn btn-outline-dark">Add to cart</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+             <div class="card mx-auto" style="width: 18rem;">
+                <img src="p6.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title ">Titan</h5>
+                    <p class="card-text ">$77.00 <span class="text-decoration-line-through">$99</span></p>
+                    <button type="button" class="btn btn-outline-dark">Add to cart</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+             <div class="card mx-auto" style="width: 18rem;">
+                <img src="p7.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title ">Rado</h5>
+                    <p class="card-text ">$77.00 <span class="text-decoration-line-through">$99</span></p>
+                    <button type="button" class="btn btn-outline-dark">Add to cart</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+             <div class="card mx-auto" style="width: 18rem;">
+                <img src="p8.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title ">Breitling X-2</h5>
+                    <p class="card-text ">$77.00 <span class="text-decoration-line-through">$99</span></p>
+                    <button type="button" class="btn btn-outline-dark">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="text-center pb-5" >
+    <button type="button" class="btn btn-outline-dark rounded-0 ps-5 pe-5"  >All Products</button>
+
+
+    </div>
+
+</div>
+</div>
+
+
+<!-------page 5------->
+
+
+<div class="container-fluid border bordr-2-danger pageend-1" >
+    <div class="pageend text-center  ">
+
+          <h2 >A Modern Expression of<br>Time-Minimal Refined</h2>
+        <button class="btn btn-outline-dark rounded-0 ps-5 pe-5 mt-3">View</button>
+        </div>
+
+
+</div>
+
+
+<!-------contact-------->
+<div class="container-fluid contact" id="contacts">
+    <div class="row" style="height:250px">
+        <div class="col-4 border border-e-secondary text-center pt-5 pb-3 contact">
+            <h4>Our Services</h4>
+            <p class="pt-3">Custom Services</p>
+            <p>F.A.Q's</p>
+            <p>Order-Tracking</p>
+        </div>
+        <div class="col-4 border border-e-secondary d-flex flex-column justify-content-center pt-3 pb-3" style="height:250px">
+
+                <h3 class="text-center pb-5" >CHRONOS</h3>
+            <div class="d-flex justify-content-evenly align-items-center ">
+                <div class=" border border-secondary rounded-circle d-flex justify-content-center align-items-center p-2 icon-1" style="height:50px;width:50px">
+            <i class="fa-brands fa-youtube "></i>
+               </div>
+                <div class="border border-secondary rounded-circle d-flex justify-content-center align-items-center p-2 icon-2" style="height:50px;width:50px">
+            <i class="fa-brands fa-facebook"></i>
+               </div>
+                <div class="border border-secondary rounded-circle d-flex justify-content-center align-items-center p-2 icon-3" style="height:50px;width:50px">
+            <i class="fa-brands fa-pinterest"></i>
+               </div>
+                <div class="border border-secondary rounded-circle d-flex justify-content-center align-items-center p-2 icon-4" style="height:50px;width:50px">
+            <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="col-4 border border-e-secondary">
+            <div class="text-center pt-5">
+            <h4>Contact</h4>
+            <p class="pt-3">Email:abc@gmail.com</p>
+            <p>Phone:(+91) 1234 1234 11</p>
+            <p>Fax:(+91) 9876 5443 10</p>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!---------notification------------>
+<div class="text-center pt-5"   >
+    <div class="bg-dark text-light pt-5 pb-3 " >
+        <h3>Don't Miss Out On The Latest</h3>
+    <p class="text-secondary">Get notified of new products, limited releases, and more.</p>
+    <div  style="width:30%" class="mx-auto mt-4 mb-5 email-icons">
+        <div class="input-group mb-3 notification border border-light rounded ">
+           <input type="text" class="form-control " placeholder="E-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+           <button class="btn  ps-3 pe-3" type="button" id="button-addon2 ">
+             <i class="fa-solid fa-envelope default  "></i>
+
+           </button>
+         </div>
+    </div>
+</div>
+    </div>
+
+
+<!--------ending------------->
+
+<diV class="d-flex justify-content-center align-items-center text-secondary">
+    <i class="fa-regular fa-copyright pt-3 pb-3 pe-3" style="font-size:15px"></i>
+    <p class="mb-0 ms-0 pt-3 pb-3">Copyright 2025</p>
+</diV>
+</div>
+</body>
+</html>
